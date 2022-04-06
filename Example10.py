@@ -1,5 +1,7 @@
+import math
 def isPrime(n):
-    for x in range(2, n):
-        if n % x == 0:
+    top = int(math.sqrt(n))
+    for i in range(2,top):
+        if n % i == 0:
             return False
     return True
